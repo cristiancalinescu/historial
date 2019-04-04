@@ -1,0 +1,70 @@
+    1  reboot
+    2  cd /home/iso/Escritorio/
+    3  mkdir historial
+    4  cd historial/
+    5  mkdir git
+    6  cd git/
+    7  touch introduccion.txt
+    8  tree
+    9  git init
+   10  git status
+   11  add .
+   12  git add .
+   13  git status
+   14  commit -m "primera subida"
+   15  git commit -m "primera subida"
+   16  git status
+   17  git remote add origin https://github.com/cristiancalinescu/historial.git
+   18  git pull origin master
+   19  git push origin master
+   20  cd ..
+   21  git clone https://github.com/AgustinPrf/libro-git.git
+   22  cd libro-git/
+   23  git reset --hard 48ed8
+   24  git remote remove origin
+   25  tree
+   26  gedit indice.txt 
+   27  git show
+   28  git status
+   29  git checkout indice.txt
+   30  git status 
+   31  gedit indice.txt 
+   32  git add indice.txt 
+   33  git status
+   34  git reset HEAD indice.txt
+   35  git status
+   36  git checkout indice.txt
+   37  git status
+   38  gedit indice.txt 
+   39  cd capitulos/
+   40  rm capitulo3.txt 
+   41  touch capitulo4.txt
+   42  cd..
+   43  cd ..
+   44  git add .
+   45  git status
+   46  git reset HEAD *
+   47  git status
+   48  git checkout *
+   49  git status
+   50  gedit indice.txt 
+   51  cd capitulos/
+   52  rm capitulo3.txt 
+   53  cd ..
+   54  git add .
+   55  commit -m "borrado accidental"
+   56  git commit -m "borrado accidental"
+   57  git status
+   58  git show
+   59  git log
+   60  git reset --soft HEAD~1
+   61  git log
+   62  git status
+   63  git commit -m "borrado accidental"
+   64  git reset --hard HEAD~1
+   65  git log
+   66  git status 
+   67  clear
+   68  history
+   69  cd ..
+   70  history > historial/git/introduccion.txt
